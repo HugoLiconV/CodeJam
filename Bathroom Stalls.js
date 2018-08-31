@@ -3,43 +3,6 @@ const lines = fs.readFileSync("C-large-practice.in", "utf8").split("\n");
 
 const numOfCases = parseInt(lines.shift());
 let output = [];
-// console.log(lines);
-
-// let firstStall = 1;
-// let lastStall = numberOfStalls + 2;
-// let ls;
-// let rs;
-// if (numberOfStalls === numberOfPeople) {
-//   ls = rs = 0;
-// } else {
-//   while (numberOfPeople > 0) {
-//     numberOfPeople = Math.floor(numberOfPeople / 2)
-//     // console.log(numberOfPeople);
-//     // }
-//     // for (let j = 0; j < numberOfPeople; j++) {
-//     let middle = Math.floor((lastStall + firstStall) / 2);
-//     // console.log(middle);
-//     rs = lastStall - middle - 1 % 1;
-//     // console.log(rs);
-//     ls = middle - (firstStall + 1);
-//     // console.log(ls);
-//     // console.log(firstStall);
-//     // console.log(lastStall);
-//     if (rs >= ls) {
-//       firstStall = middle;
-//     } else {
-//       lastStall = middle;
-//     }
-//   }
-// }
-
-// console.log(`${rs} ${ls}`);
-// // console.assert(`${ls} ${rs}` === '1 0')
-// // output += `Case #${(i + 1)}: ${Math.max(ls,rs)} ${Math.min(ls,rs)}\n`;
-// console.log(`${Math.max(ls,rs)} ${Math.min(ls,rs)}`);
-// }
-// fs.writeFile('output.txt', output);
-
 
 for (let i = 0; i < numOfCases; i++) {
   const input = lines[i].split(' ');
