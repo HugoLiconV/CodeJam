@@ -1,6 +1,6 @@
 const bigInt = require("big-integer");
 const fs = require("fs");
-const lines = fs.readFileSync("C-small-practice-1.in", "utf8").split("\n");
+const lines = fs.readFileSync("bathroom.stalls/inputs/C-small-practice-2.in", "utf8").split("\n");
 
 const numOfCases = parseInt(lines.shift());
 let output = [];
@@ -12,7 +12,7 @@ for (let i = 0; i < numOfCases; i++) {
   const result = solveBathroomStalls(numberOfStalls, numberOfPeople);
   output.push(`Case #${(i + 1)}: ${result[0]} ${result[1]}`);
 }
-fs.writeFile('output.txt', output.join("\n"));
+fs.writeFile('bathroom.stalls/output.txt', output.join("\n"));
 
 function solveBathroomStalls(numberofStalls, numberOfPeople) {
   if (bigInt(numberOfPeople).equals(1)) {

@@ -2,8 +2,9 @@
   "name": "bathroom",
   "version": "1.0.0",
   "description": "",
-  "main": "Bathroom Stalls.js",
+  "main": "bathroom.stalls.js",
   "scripts": {
+    "bathroom": "node bathroom.stalls/bathroom.stalls.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
