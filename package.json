@@ -5,6 +5,7 @@
   "main": "bathroom.stalls.js",
   "scripts": {
     "bathroom": "node bathroom.stalls/bathroom.stalls.js",
+    "fashion": "node fashion.show/fashion.show.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
