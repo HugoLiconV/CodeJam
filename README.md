@@ -10,11 +10,20 @@ Solution for code jam problems using Javascript.
 * Fashion Show
 
 ## Installation
+
+```
+cd JavaScript
+```
 ```
 npm install
 ```
 
 ## Execute 
+```
+cd JavaScript
+```
+Then:
+ 
 Oversized Pancake Flipper 
 ```
 npm run pancake
