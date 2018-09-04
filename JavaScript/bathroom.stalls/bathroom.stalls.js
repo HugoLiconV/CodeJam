@@ -12,7 +12,9 @@ for (let i = 0; i < numOfCases; i++) {
   const result = solveBathroomStalls(numberOfStalls, numberOfPeople);
   output.push(`Case #${(i + 1)}: ${result[0]} ${result[1]}`);
 }
-fs.writeFile('bathroom.stalls/output.txt', output.join("\n"));
+fs.writeFile('bathroom.stalls/output.txt', output.join("\n"), (err) => {
+  if (err) throw err;
+});
 
 function solveBathroomStalls(numberofStalls, numberOfPeople) {
   if (bigInt(numberOfPeople).equals(1)) {
